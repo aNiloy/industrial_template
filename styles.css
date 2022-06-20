@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid black;
+}
+
+.d-flex {
+  display: flex;
+}
+
+/* navebar-start */
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.logo > img {
+  height: 2rem;
+}
+
+.nav-items {
+  display: flex;
+}
+
+.nav-items ul {
+  padding: 0;
+  display: inline-flex;
+  list-style-type: none;
+}
+
+.nav-items ul li {
+  padding: 5px 8px;
+  margin: 0 4px;
+  font-size: 22px;
+  transition: 0.2s;
+}
+
+.nav-items ul li:hover {
+  background-color: #c9e4f9;
+  border-radius: 4px;
+}
+
+.x-button {
+  font-size: 22px;
+  transition: 0.2s;
+  padding: 0 4.04px 0 4.04px;
+}
+
+.x-button:hover {
+  color: #f2f2f2;
+  background-color: rgb(204, 95, 95);
+  border-radius: 50%;
+}
+
+.nav-items a {
+  text-decoration: none;
+}
+
+.move-to-bottom {
+  align-items: flex-end;
+}
+
+.nav-icon-color {
+  color: #828282;
+}
+
+.mobile-rotated {
+  transform: rotateZ(90deg);
+}
+
+/* navebar-end */
+
+/* banner-start */
+
+.banner {
+  position: relative;
+  background-image: linear-gradient(rgba(9, 5, 9, 0.7), rgba(9, 5, 9, 0.7)),
+    url("images/banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+.banner-fg {
+  width: 50%;
+  object-fit: contain;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding-right: 40px;
+}
+
+.banner-fg > img {
+  height: 480px;
+}
+
+.banner-text {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+}
+
+.banner-text h3 {
+  font-family: "Roboto", sans-serif;
+  color: #f4cb08;
+  font-weight: 100;
+  padding: 20px;
+}
+
+.banner-text h1 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 100;
+  padding: 20px;
+}
+
+.yellow-line {
+  background-color: #f4cb08;
+  height: 3px;
+  width: 15%;
+  margin-left: 20px;
+}
+
+.banner-text h4 {
+  font-family: "Anek Malayalam", sans-serif;
+  color: white;
+  padding: 20px;
+}
+
+.banner-btns {
+  padding: 20px;
+}
+
+.btn {
+  background-color: Transparent;
+  color: white;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 20px;
+  border: 1px solid white;
+  margin-right: 30px;
+  transition: 0.2s;
+}
+
+.btn:hover {
+  background-color: #f4cb08;
+  border-color: #f4cb08;
+  box-shadow: #828282;
+}
+
+/* banner-end */
+
+/* welcome-section */
+.welcome {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 50px 100px 50px 100px;
+  height: 400px;
+}
+
+.welcome-message {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.welcome-message h3 {
+  font-family: "Roboto", sans-serif;
+  color: #f4cb08;
+  font-weight: 700;
+  padding: 0px 20px 5px 20px;
+}
+
+.welcome-message h1 {
+  font-family: "Roboto", sans-serif;
+  color: black;
+  font-weight: 100;
+  padding: 5px 20px 20px 20px;
+}
+
+.welcome-message h4 {
+  font-family: "Anek Malayalam", sans-serif;
+  color: gray;
+  padding: 20px;
+  font-style: italic;
+}
+
+.welcome-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+}
+.welcome-text {
+  font-family: "Anek Malayalam", sans-serif;
+  font-size: small;
+}
+
+.alt-btn {
+  margin-top: 25px;
+  background-color: #f4cb08;
+  color: white;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+  padding: 5px 20px;
+  border: 2px solid #f4cb08;
+  margin-right: 30px;
+  transition: 0.1s;
+}
+
+.alt-btn:hover {
+  border-color: #f4cb08;
+  color: #f4cb08;
+  background: transparent;
+}
+/* welcome-section-end */
+
+.services {
+  width: 100%;
+  display: flex;
+}
+
+.service {
+  padding: 150px 0 5px 0;
+}
+
+.service h4 {
+  font-family: "Roboto", sans-serif;
+  color: white;
+  font-weight: 700;
+  padding: 0px 20px 20px 20px;
+}
+
+.service p {
+  font-family: "Anek Malayalam", sans-serif;
+  color: white;
+  padding: 20px;
+  font-size: small;
+}
+
+.construction {
+  background-image: linear-gradient(rgba(9, 5, 9, 0.7), rgba(9, 5, 9, 0.7)),
+    url("images/CONSTRUCTION RENOVATION.png");
+}
+
+.interior {
+  background-image: linear-gradient(rgba(9, 5, 9, 0.7), rgba(9, 5, 9, 0.7)),
+    url("images/FINISHING INTERIORS.png");
+}
+
+.design {
+  background-image: linear-gradient(rgba(9, 5, 9, 0.7), rgba(9, 5, 9, 0.7)),
+    url("images/DESIGN _ BUILDING.png");
+}
